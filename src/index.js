@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
-const App = () => {
+const App = (props) => {
   const [count, setCount] = useState(0);
+
+  const handleCount = () => {
+    setCount(count + 1);
+  };
 
   return (
     <>
-      <h1>click {count} times</h1>
-      <button type="button" onClick={() => { setCount(count + 1); }}>click</button>
+      <h1>{props.title} click {count} times</h1>
+      <button type="button" onClick={handleCount}>click</button>
     </>
   );
 };
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+ReactDOM.render(<App title="CountUp" />, document.querySelector('#app'));
