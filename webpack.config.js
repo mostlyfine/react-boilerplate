@@ -22,9 +22,9 @@ module.exports = {
       },
     ],
   },
-    plugins: [
-      new HTMLPlugin({
-        template: path.resolve(__dirname, 'src', 'index.html'),
-      }),
-    ],
+  plugins: [
+    new HTMLPlugin({
+      template: path.resolve(__dirname, 'src', 'index.html'),
+    }),
+  ],
 };
