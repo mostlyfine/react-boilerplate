@@ -18,16 +18,16 @@ $ cd react-boilerplate
 $ yarn install
 ```
 
-### Development using watch mode
+### Production build
 
 ```
-$ yarn watch
+$ yarn build
 ```
 
 ### Starting the dev server
 
 ```
-$ yarn server
+$ yarn dev
 ```
 
 Go to http://localhost:8080 and see the magic happen.

@@ -1,12 +1,12 @@
 {
   "name": "react-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "author": "mostlyfine",
   "license": "MIT",
   "scripts": {
     "build": "webpack --production",
-    "dev": "webpack-dev-server --hot --watch-content-base --content-base public/",
+    "dev": "webpack-dev-server --hot --open --watch-content-base --content-base dist/",
     "lint": "eslint --fix src"
   },
   "devDependencies": {
