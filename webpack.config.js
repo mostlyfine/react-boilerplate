@@ -3,6 +3,11 @@ const HTMLPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: 'development',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/assets/',
+    filename: 'build.js?[hash]'
+  },
   module: {
     rules: [
       {
